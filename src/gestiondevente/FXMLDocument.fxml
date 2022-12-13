@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="email" layoutX="105.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" />
+            <Text fx:id="mdp" layoutX="105.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe:" />
+            <TextField fx:id="emailp" layoutX="212.0" layoutY="134.0" promptText="E-mail" />
+            <PasswordField fx:id="mdpp" layoutX="212.0" layoutY="196.0" promptText="mot de passe" />
+            <Button fx:id="btncon" layoutX="309.0" layoutY="255.0" mnemonicParsing="false" text="connecter" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

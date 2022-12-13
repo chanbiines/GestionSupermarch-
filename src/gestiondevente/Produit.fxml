@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="866.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestiondevente.ProduitController">
+   <children>
+      <VBox layoutX="560.0" layoutY="28.0" prefHeight="125.0" prefWidth="142.0" />
+      <VBox layoutX="14.0" layoutY="130.0" prefHeight="261.0" prefWidth="127.0" spacing="15.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="120.0" text="num_produit" textFill="#0dc738">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Libelle" textFill="#0dc738">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="Reference" textFill="#0dc738">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="stock" textFill="#0dc738">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="prix" textFill="#0dc738">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField layoutX="382.0" layoutY="28.0" prefHeight="41.0" prefWidth="211.0" promptText="       Gestion de Produit" style="-fx-background-color: #0000FF;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="131.0" layoutY="139.0" prefHeight="242.0" prefWidth="120.0" spacing="19.0">
+         <children>
+            <TextField fx:id="tfnum_produit" />
+            <TextField fx:id="tfLibelle" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfReference" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfstock" layoutX="10.0" layoutY="36.0" />
+            <TextField fx:id="tfprix" layoutX="10.0" layoutY="87.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvProduit" layoutX="271.0" layoutY="123.0" prefHeight="374.0" prefWidth="538.0">
+        <columns>
+          <TableColumn fx:id="colnum_produit" prefWidth="87.20001220703125" text="num_produit" />
+          <TableColumn fx:id="colLibelle" prefWidth="116.0" text="Libelle" />
+            <TableColumn fx:id="colReference" prefWidth="109.5999755859375" text="Reference" />
+            <TableColumn fx:id="colstock" prefWidth="103.20001220703125" text="stock" />
+            <TableColumn fx:id="colprix" minWidth="3.99993896484375" prefWidth="112.800048828125" text="prix" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="33.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #7FFF00;" text="Insert" textFill="#191b1a" />
+      <Button fx:id="btnUpdate" layoutX="33.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #FFFF00;" text="Update" />
+      <Button fx:id="btnDelete" layoutX="33.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #FF4500;" text="Delete" />
+      <ImageView fitHeight="84.0" fitWidth="147.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../G-vente%20photo/stockPhoto.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
